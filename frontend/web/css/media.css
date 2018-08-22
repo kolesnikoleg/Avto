@@ -1,0 +1,253 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	header .main_menu a {
+		font-size: 14.2px;
+	}
+	footer .wrapper.mnu, footer .wrapper.map {
+		margin-top:40px;
+	}
+	footer .wrapper.contacts {
+		margin-left: 40px;
+	}
+	#search_res table td input {
+		margin-right: 0;
+		margin-bottom: 4px;
+	}
+	#search_res table td {
+		padding: 7px 3px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header .main_menu .hid {
+		display: none;
+	}
+	header .main_menu .mob {
+		display: block;
+	}
+	.grey_line {
+		width: 11.5%;
+	}
+	section article#how_order .partners {
+		display: none;
+	}
+	footer .wrapper.contacts {
+		margin-left: 40px;
+	}
+
+	.cart table tr:nth-child(1) {
+		display: none;
+	}
+	section.page .cart table tr td {
+		display: block;
+		margin-bottom: 3px;
+		border: 1px #AAA solid;
+		background-color: #DDD;
+	}
+	section.page .cart table tr td:nth-last-child(1) {
+		margin-bottom: 35px;
+	}
+
+	.table-order table tr:nth-child(1) {
+		display: none;
+	}
+	section.page.orders .container .content_page .table-order table tr td {
+		display: block;
+		margin-bottom: 3px;
+		border: 1px #AAA solid;
+		background-color: #DDD;
+	}
+	section.page.orders .container .content_page .table-order table tr td:nth-last-child(1) {
+		margin-bottom: 35px;
+	}
+	section.page.orders .container .content_page .table {
+		margin-bottom: 0px;
+	}
+	section.page.orders .container .content_page table tr:nth-last-child(1) td:nth-last-child(1) {
+		margin-bottom: 0px;
+	}
+
+	.table-archive table tr:nth-child(1) {
+		display: none;
+	}
+	section.page.archive .container .content_page .table-archive table tr td {
+		display: block;
+		margin-bottom: 3px;
+		border: 1px #AAA solid;
+		background-color: #DDD;
+	}
+	section.page.archive .container .content_page .table-archive table tr td:nth-last-child(1) {
+		margin-bottom: 35px;
+	}
+	section.page.archive .container .content_page .table {
+		margin-bottom: 0px;
+	}
+	section.page.archive .container .content_page table tr:nth-last-child(1) td:nth-last-child(1) {
+		margin-bottom: 0px;
+	}
+
+	.page .my-cars-index table thead {
+		display: none;
+	}
+	.page .my-cars-index table tr td {
+		display: block;
+		text-align: center;
+	}
+
+	section#search_res table tr:nth-child(1) {
+		display: none;
+	}
+	section#search_res table tr td {
+		display: block;
+		margin-bottom: 3px;
+		border: 1px #AAA solid;
+		background-color: #DDD;
+	}
+	section#search_res table tr td:nth-last-child(1) {
+		margin-bottom: 35px;
+	}
+	section#search_restable {
+		margin-bottom: 0px;
+	}
+	section#search_res table tr:nth-last-child(1) td:nth-last-child(1) {
+		margin-bottom: 0px;
+	}
+	section#search_res table tr td span#add {
+		margin-left: 5px;
+	}
+	article#search_res .table .header {
+		margin-bottom: 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.grey_line {
+		width: 10%;
+	}
+	header .contacts .recall_me {
+		display: none;
+	}
+	header .boxes {
+		display: none;
+	}
+	header .boxes {
+		display: none;
+	}
+	header .vin {
+		text-align: center;
+	}
+	header .exchange {
+		text-align: center;
+	}
+	header .reg {
+		text-align: center;
+	}
+	header .cart {
+		text-align: center;
+	}
+	footer .wrapper.contacts {
+		margin-left: 1px;
+	}
+	footer .wrapper.mnu {
+		padding-left: 1px;
+	}
+	footer .wrapper.message {
+		margin-top:40px;
+	}
+	#search_res table td.sm_hid {
+		font-size: 0;
+	}
+	section.page .info .wrapper_left, section.page .info .wrapper_right {
+		text-align: center;
+		padding: 0;
+	}
+	section.page .info .wrapper_right {
+		margin-top: 15px
+	}
+	section.page.cart .info {
+		float: none;
+		text-align: center;
+	}
+	section.page.cart .but {
+		text-align: center;
+	}
+	section.page.cart .but.first {
+		margin-top: 15px;
+	}
+	section.page.cart .btn_order {
+		margin-top: 25px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	header .cart {
+		color: #000;
+	}
+	header .cart i {
+		border: 1px #000 solid;
+	}
+	header .cart a {
+		color: #000;
+	}
+	header .contacts {
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .contacts p {
+		margin-top: 12px;
+	}
+	header .reg .name_hello {
+		color: #000;
+	}
+	section article#how_order .under_head {
+		font-size: 36px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/*form.myform.mnu {
+		float: none;
+	}*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	section article#how_order .partners_gallery {
+		display: none;
+	}
+	header form.myform.mnu {
+		float: right;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

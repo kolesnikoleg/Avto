@@ -1,0 +1,1524 @@
+$r_c: #ca1923
+
+body
+	font-family: "RobotoMedium", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	background-color: #fff
+	// overflow-x: hidden
+
+.mfp-wrap
+	position: fixed
+	overflow: auto
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.red
+	color: $r_c
+
+.hidden
+	display: none
+
+.clear
+	clear: both
+
+p, li, ul
+	margin: 0
+	padding: 0
+
+a, img, a:focus, a:active, img:focus, img:active, button:focus, button:active, input:focus, input:active, textarea:focus, textarea:active
+	outline: none !important
+
+a, a:visited
+	text-decoration: none
+
+.grey_line
+	position: absolute
+	background-color: #313131
+	width: 50%
+	top: 0
+	right: 0
+	height: 77px
+
+p.preloader
+	text-align: center
+
+.flash
+	font-size: 22px
+	&.red
+		color: $r_c
+	&.green
+		color: #007616
+
+table
+	text-transform: uppercase
+
+.bld
+	font-weight: bold
+
+#recall_me
+	background: #000
+	padding: 20px 30px
+	text-align: left
+	max-width: 430px
+	margin: 40px auto
+	position: relative
+	h3
+		color: $r_c
+		font-size: 32px
+	.label
+		font-size: 14px
+		font-family: "RobotoRegular", sans-serif
+		line-height: 24px
+		padding: 0
+	input
+		display: block
+		width: 100%
+		background-color: #000
+		border: 1px #fff solid
+		padding: 4px 7px
+		color: #fff
+		margin-bottom: 10px
+		font-size: 16px
+		&.lst
+			margin-bottom: 30px
+	button.mfp-close
+		color: #999
+	.a_subm
+		text-align: center
+		.subm
+			text-decoration: none
+			color: #fff
+			background-color: $r_c
+			padding: 6px 11px
+			font-size: 16px
+			cursor: pointer
+			border: 1px $r_c solid
+			transition: all .4s ease
+			&:hover
+				background-color: #000
+				color: #fff
+				transition: all .4s ease
+	.err
+		display: none
+		text-align: center
+		color: #fff
+		margin-bottom: 30px
+		font-size: 17px
+
+
+
+.myform
+	.control-label, .label
+		width: 100%
+		color: #000
+		font-size: 18px
+		padding: 0
+		margin: 0
+		font-weight: 400
+		text-transform: uppercase
+		margin-top: 15px
+	.help-block
+		margin-top: 2px
+		font-size: 19px
+		color: #f00
+	input[type="text"], input[type="password"], textarea
+		width: 100%
+		font-family: "RobotoCondensedRegular"
+		border: 1px $r_c solid
+		padding: 7px 14px
+		font-size: 20px
+		border-radius: 0
+		box-shadow: none
+		height: auto
+	div.checkbox input[type="checkbox"]
+		display: inline-block
+		width: 15px
+		height: 15px
+		vertical-align: sub
+		margin: 0
+		margin-right: 8px
+		vertical-align: middle
+		position: static
+	div.checkbox label
+		font-size: 18px
+		font-family: "RobotoCondensedRegular"
+		font-weight: 400
+		vertical-align: sub
+		padding-left: 0
+	div.checkbox
+		margin-top: 40px
+	button
+		display: block
+		margin-top: 25px
+		background-color: $r_c
+		border: none
+		color: #fff
+		padding: 8px 15px
+		font-size: 20px
+		border-radius: 0
+	&.mnu
+		button
+			color: #fff
+			margin-top: 0
+			text-decoration: none
+			background-color: $r_c
+			padding: 8px 15px
+			font-size: 20px
+			margin-left: 7px
+			transition: all .5s ease
+			&:hover
+				background-color: #fff
+				color: #000
+				transition: all .5s ease
+	.reset_pass
+		font-size: 18px
+	.head
+		text-align: center
+		color: $r_c
+		margin-top: 90px
+		font-size: 42px
+		line-height: 44px
+.my_menu form[action='/logout']
+	margin-top: 7px
+.btn_us
+	color: #fff
+	margin-top: 0
+	text-decoration: none
+	background-color: $r_c
+	padding: 8px 15px
+	font-size: 20px
+	transition: all .5s ease
+	text-transform: uppercase
+	display: inline-block
+	mb10
+	&.mt-20
+		margin-top: 20px
+	&.mb-20	
+		margin-bottom: 20px
+	&.mr-10	
+		margin-right: 10px
+	&:hover
+		background-color: #000
+		color: #fff
+		transition: all .5s ease
+		text-decoration: none
+
+.btn_us:active, .btn_us:focus, .btn_us:visited
+	text-decoration: none
+	color: #fff
+
+header
+	background-image: url('../img/bg_car.jpg')
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #fff
+	.main_logo
+		margin-top: 15px
+		margin-left: 15px
+		float: left
+	.main_menu
+		background-color: #313131
+		// width: 100%
+		color: #fff
+		font-size: 16.2px
+		float: right
+		line-height: 75px
+		position: relative
+		z-index: 9
+		font-family: "RobotoCondensedRegular"
+		.sector
+			display: inline-block
+		a
+			color: #fff
+			text-decoration: none
+			&.active
+				color: $r_c
+			&:hover
+				color: $r_c
+				text-decoration: underline
+		.popup_menu
+			display: none
+			position: absolute
+			background-color: #313131
+			right: 0
+			div
+				line-height: 25px
+				border-top: 1px #666 solid
+				a
+					padding: 10px 20px
+					display: block
+				&:nth-child(1)
+					line-height: 25px
+					border-top: none
+		.mob
+			display: none
+			i
+				font-size: 24px
+				margin-right: 15px
+	.contacts
+		text-align: right
+		color: #fff
+		font-family: "RobotoCondensedRegular"
+		p
+			font-size: 19px
+			margin-bottom: 5px
+			i
+				color: $r_c
+				margin-right: 7px
+				font-size: 25px
+				vertical-align: bottom
+			&.recall_me
+				cursor: pointer
+				margin-top: 10px
+				&:hover .dash
+					border-bottom: 1px $r_c solid
+				.dash
+					border-bottom: 1px $r_c dashed
+					line-height: 20px
+					a
+						text-decoration: none
+						color: #fff
+
+	.boxes
+		font-family: "RobotoCondensedRegular"
+		p
+			font-size: 15px
+			color: #fff
+			margin-bottom: 6px
+			i
+				margin-right: 5px
+			.dash
+				border-bottom: 1px $r_c dashed
+				a
+					color: #fff
+					text-decoration: none
+			&:hover .dash
+				border-bottom: 1px $r_c solid
+	.vin
+		font-family: "RobotoCondensedRegular"
+		line-height: 40px
+		font-size: 19px
+		cursor: pointer
+		margin-top: 15px
+		margin-bottom: 15px
+		i
+			color: #fff
+			background-color: $r_c
+			padding: 10px
+			border-radius: 100px
+		a
+			color: #fff
+			text-decoration: none
+		&:hover a
+			text-decoration: underline
+	.exchange
+		color: #fff
+		font-family: "RobotoCondensedRegular"
+		font-size: 16.5px
+		p
+			margin-bottom: 0px
+	.reg
+		margin-top: 23px
+		color: #fff
+		font-family: "RobotoCondensedRegular"
+		text-align: right
+		.name_hello
+			font-size: 14.3px
+			margin-bottom: 3px
+			.login
+				font-family: "RobotoCondensedBold"
+		a
+			color: #fff
+			text-decoration: none
+			background-color: $r_c
+			padding: 8px 15px
+			font-size: 20px
+			margin-left: 6px
+			transition: all .5s ease
+			&:hover
+				background-color: #fff
+				color: #000
+				transition: all .5s ease
+	.cart
+		font-family: "RobotoCondensedRegular"
+		text-align: right
+		margin-top: 30px
+		color: #fff
+		line-height: 30px
+		font-size: 16px
+		i
+			margin-right: 7px
+			border: 1px #fff solid
+			border-radius: 100px
+			padding: 11px 10px
+		a
+			color: #fff
+	.search
+		margin-top: 70px
+		font-family: "RobotoCondensedRegular"
+		border-bottom: 2px #000 solid
+		input
+			width: 100%
+			float: left
+			border: none
+			padding: 8px
+			position: relative
+			background-color: inherit
+			font-size: 25px
+			padding-left: 54px
+			&:focus, &:active
+				outline: none !important
+		button
+			position: absolute
+			float: right
+			right: 23px
+			border: none
+			background-color: $r_c
+			color: #fff
+			bottom: 23px
+			font-size: 25px
+			padding: 5px 12px
+			line-height: 27px
+		.icon_search
+			position: absolute
+			color: $r_c
+			left: 28px
+			bottom: 25px
+			font-size: 29px
+section
+	font-family: "RobotoCondensedRegular"
+	padding-bottom: 80px
+	min-height: 500px
+	article#how_order
+		.head
+			text-align: center
+			color: $r_c
+			margin-top: 90px
+			font-size: 42px
+			line-height: 44px
+		.under_head
+			text-align: center
+			color: #000
+			margin-top: 40px
+			font-size: 42px
+			line-height: 44px
+			margin-bottom: 35px
+		.icon
+			text-align: center
+			width: 97px
+			height: 97px
+			line-height: 97px
+			color: #fff
+			font-size: 46px
+			background-color: $r_c
+			border-radius: 100px
+			display: block
+			margin: 0 auto
+		.text
+			text-align: center
+			font-size: 22px
+			line-height: 22px
+			margin-top: 15px
+			margin-bottom: 40px
+		.header
+			color: $r_c
+			text-transform: uppercase
+			font-size: 20px
+			line-height: 22px
+		.date
+			margin-top: 4px
+		a.all_news
+			margin-top: 10px
+		.content
+			font-family: "RobotoCondensedBold"
+			margin-top: 10px
+		a
+			text-decoration: none
+			font-size: 20px
+			color: #000
+			border-bottom: 1px $r_c dashed
+			margin-bottom: 40px
+			display: inline-block
+			&:hover
+				border-bottom: 1px $r_c solid
+		.switchers
+			font-family: "RobotoCondensedBold"
+			text-align: center
+			span
+				border-bottom: 1px $r_c dashed
+				cursor: pointer
+				line-height: 16px
+				&:hover
+					border-bottom: 1px $r_c solid
+		.partners_gallery
+			display: block
+			margin-top: 50px
+			img
+				max-width: 100%
+				width: auto
+				margin: 0 auto
+			.arr_left, .arr_right
+				text-align: center
+				font-size: 56px
+				cursor: pointer
+				color: $r_c
+		.partners
+			margin-top: 40px
+		.partners div
+			text-align: center
+			margin-bottom: 10px
+			margin-top: 10px
+		.partners div.row div
+			height: 120px
+			line-height: 120px
+		.partners
+			img
+				max-width: 100%
+
+footer
+	background-color: #000
+	padding: 40px 0
+	color: #fff
+	font-family: "RobotoCondensedRegular"
+	.head
+		font-size: 40px
+		a
+			color: #fff
+			text-decoration: none
+	.wrapper
+		&.contacts
+			.one
+				margin-top: 9px
+			.icon
+				display: inline-block
+				font-size: 24px
+				color: $r_c
+				vertical-align: top
+				width: 35px
+			.content
+				display: inline-block
+				font-size: 19px
+				padding-top: 4px
+				p
+					padding: 0
+					margin: 0
+		&.message
+			input, textarea
+				width: 100%
+				border: 1px #fff solid
+				padding: 5px
+				color: #fff
+				background-color: #000
+			textarea
+				height: 60px
+			.label
+				font-size: 17px
+				padding: 0
+				margin: 0
+				margin-top: 15px
+				display: block
+				text-align: left
+				margin-bottom: 4px
+			button
+				background-color: $r_c
+				color: #fff
+				border: none
+				font-size: 20px
+				padding: 1px 10px
+				float: right
+				margin-top: 10px
+			.error
+				text-align: right
+				text-transform: uppercase
+				margin: 0
+				margin-top: 10px
+				display: none
+		&.mnu
+			padding-left: 35px
+			ul
+				padding-left: 18px
+				a
+					color: #fff
+					text-decoration: none
+					font-size: 19px
+					transition: margin-left .3s ease
+					&:hover
+						color: $r_c
+						margin-left: 12px
+						transition: margin-left .3s ease
+					&.active
+						color: $r_c
+		&.map
+			#map
+				height: 215px
+			a
+				background-color: $r_c
+				color: #fff
+				border: none
+				font-size: 20px
+				padding: 1px 10px
+				float: right
+				margin-top: 10px
+				text-decoration: none
+				margin-top: 15px
+				display: inline-block
+.copyr
+	background-color: #313131
+	text-align: center
+	padding: 20px 0
+	font-size: 15.7px
+	color: #fff
+	font-family: "RobotoCondensedRegular"
+	p
+		margin: 0
+		a
+			color: #fff
+.over_menu
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 9999999
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .9)
+	display: none
+	overflow-y: auto
+	position: fixed
+	padding-bottom: 30px
+	.cl
+		position: absolute
+		top: 10px
+		right: 10px
+		color: #fff
+		font-size: 26px
+		border: 1px #fff solid
+		display: block
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		cursor: pointer
+		i
+			line-height: 40px
+	.logo
+		margin-top: 30px
+		text-align: center
+	.reg
+		margin-top: 30px
+		color: #fff
+		font-family: "RobotoCondensedRegular"
+		text-align: center
+		.name_hello
+			font-size: 14.3px
+			margin-bottom: 3px
+			.login
+				font-family: "RobotoCondensedBold"
+		a
+			color: #fff
+			margin-top: 0
+			text-decoration: none
+			background-color: $r_c
+			padding: 8px 15px
+			font-size: 20px
+			margin-left: 6px
+			transition: all .5s ease
+			&:hover
+				background-color: #fff
+				color: #000
+				transition: all .5s ease
+	.search
+		margin-top: 30px
+		font-family: "RobotoCondensedRegular"
+		border-bottom: 2px #fff solid
+		position: relative
+		margin-bottom: 50px
+		input
+			width: 100%
+			color: #fff
+			float: left
+			border: none
+			padding: 8px
+			position: relative
+			background-color: inherit
+			font-size: 25px
+			padding-left: 54px
+			&:focus, &:active
+				outline: none !important
+		button
+			position: absolute
+			float: right
+			right: 7px
+			border: none
+			background-color: $r_c
+			color: #fff
+			bottom: 6px
+			font-size: 25px
+			padding: 5px 12px
+			line-height: 27px
+		.icon_search
+			position: absolute
+			color: $r_c
+			left: 10px
+			bottom: 9px
+			font-size: 29px
+	.cart
+		font-family: "RobotoCondensedRegular"
+		text-align: center
+		margin-top: 40px
+		margin-bottom: 30px
+		color: #fff
+		line-height: 30px
+		font-size: 17px
+		i
+			margin-right: 7px
+			border: 1px #fff solid
+			border-radius: 100px
+			padding: 11px 10px
+		a
+			color: #fff
+	.main_menu_tog
+		text-align: center
+		color: #fff
+		margin-top: 3px
+		font-size: 26px
+		cursor: pointer
+		span
+			border-bottom: 1px $r_c dashed
+			font-family: "RobotoCondensedBold"
+	.main_menu_main, .main_menu_my
+		p
+			margin: 9px 0
+			a.active
+				color: $r_c
+	.vin
+		font-family: "RobotoCondensedRegular"
+		line-height: 40px
+		font-size: 19px
+		cursor: pointer
+		margin-top: 35px
+		margin-bottom: 15px
+		text-align: center
+		i
+			color: #fff
+			background-color: $r_c
+			padding: 10px
+			border-radius: 100px
+		a
+			color: #fff
+			text-decoration: none
+		&:hover a
+			text-decoration: underline
+	.boxes
+		font-family: "RobotoCondensedRegular"
+		text-align: center
+		margin-top: 30px
+		p
+			font-size: 15px
+			color: #fff
+			margin-bottom: 6px
+			i
+				margin-right: 5px
+			.dash
+				border-bottom: 1px $r_c dashed
+				a
+					color: #fff
+					text-decoration: none
+			&:hover .dash
+				border-bottom: 1px $r_c solid
+	.contacts
+		text-align: center
+		margin-top: 50px
+		color: #fff
+		font-family: "RobotoCondensedRegular"
+		p
+			font-size: 19px
+			margin-bottom: 15px
+			i
+				color: $r_c
+				margin-right: 7px
+				font-size: 25px
+				vertical-align: bottom
+			&.recall_me
+				cursor: pointer
+				margin-top: 10px
+				&:hover .dash
+					border-bottom: 1px $r_c solid
+				.dash
+					border-bottom: 1px $r_c dashed
+					line-height: 20px
+	.main_menu_main, .main_menu_my
+		text-align: center
+		margin-bottom: 50px
+		display: none
+		a
+			color: #fff
+.top_menu
+	background-color: #000
+	position: fixed
+	width: 100%
+	z-index: 999999
+	border-bottom: 1px #fff solid
+	font-family: "RobotoCondensedRegular"
+	display: none
+	.logo
+		font-size: 26px
+		padding: 0 10px
+		float: left
+		margin: 0
+		line-height: 42px
+		a
+			color: #fff
+			text-decoration: none
+	.btns
+		float: right
+		color: #fff
+		font-size: 24px
+		line-height: 42px
+		div, a
+			float: right
+			margin-right: 15px
+		& > div, a
+			margin-top: 8px
+		a
+			display: block
+			color: #fff
+			span
+				display: block
+				color: #fff
+		.cart
+			position: relative
+			.val
+				position: absolute
+				background-color: $r_c
+				padding: 2px 8px
+				font-size: 14px
+				line-height: 15px
+				border-radius: 100px
+				top: 7px
+				left: -9px
+	.search_up
+		margin-top: 10px
+		font-family: "RobotoCondensedRegular"
+		border-bottom: 2px #000 solid
+		padding: 0 10px
+		input
+			width: 100%
+			float: left
+			border: none
+			position: relative
+			background-color: #fff
+			font-size: 18px
+			padding: 4px 7px
+			padding-right: 60px
+			margin-bottom: 10px
+			&:focus, &:active
+				outline: none !important
+		button
+			position: absolute
+			float: right
+			right: 16px
+			border: none
+			background-color: $r_c
+			color: #fff
+			bottom: 8px
+			font-size: 25px
+			padding: 6px 12px
+			line-height: 27px
+		.icon_search
+			position: absolute
+			color: $r_c
+			left: 28px
+			bottom: 6px
+			font-size: 29px
+article#search_res, section#search_res
+	.head
+		text-align: center
+		color: $r_c
+		margin-top: 90px
+		font-size: 42px
+		line-height: 44px
+	.under_head
+		text-align: center
+		color: #000
+		margin-top: 10px
+		font-size: 42px
+		line-height: 44px
+		margin-bottom: 35px
+	.found
+		text-align: center
+		font-size: 26px
+		margin-top: 10px
+		display: none
+	.table
+		display: none
+		.header
+			font-size: 32px
+			text-align: center
+			margin-top: 60px
+			line-height: 35px
+	.gr_uah
+		color: #AAA
+	.not_found
+		display: none
+		text-align: center
+		color: #000
+		margin-top: 10px
+		font-size: 30px
+		line-height: 36px
+		margin-bottom: 35px
+#search_res
+	h2
+		margin-bottom: 0
+	table
+		text-transform: uppercase
+		margin-top: 10px
+		width: 100%
+		tr:nth-child(1)
+			color: $r_c
+			font-family: "RobotoCondensedBold"
+			background-color: #eee
+			height: 40px
+			td
+				font-family: "RobotoCondensedBold"
+		td
+			border: 1px #DDD solid
+			padding: 5px 7px
+			text-align: center
+			font-size: 14px
+			font-family: "RobotoCondensedRegular"
+		input
+			margin-right: 4px
+		i
+			background-color: $r_c
+			padding: 6px 7px
+			color: #fff
+			cursor: pointer
+			margin-right: 4px
+section.page
+	h2
+		text-align: center
+		color: $r_c
+		margin-top: 50px
+		font-size: 42px
+		line-height: 44px
+		margin-bottom: 35px
+		text-transform: uppercase
+	.my_menu
+		text-align: center
+		max-width: 670px
+		margin: 0 auto
+		a
+			background-color: #000
+			color: #fff
+			padding: 5px 8px
+			text-transform: uppercase
+			text-decoration: none
+			margin: 0 5px
+			margin-top: 7px
+			transition: all .3s ease
+			display: inline-block
+			margin-bottom: 4px
+			position: relative
+			&:hover
+				background-color: $r_c
+				transition: all .3s ease
+			&:hover span.new_mess
+				transition: all .3s ease
+				background-color: #000
+			span.new_mess
+				background-color: #ca1923
+				color: #fff
+				text-align: center
+				display: inline-block
+				height: 19px
+				width: 20px
+				margin-left: 7px
+				line-height: 19px
+	.email_warn
+		max-width: 706px
+		margin: 0 auto
+		margin-top: 50px
+		text-align: center
+		.head
+			text-align: center
+			color: $r_c
+			font-size: 26px
+			line-height: 28px
+			margin-bottom: 10px
+		.text
+			font-size: 18px
+			text-align: center
+			line-height: 21px
+			a
+				color: $r_c
+		.but_cl
+			text-align: center
+			font-size: 18px
+			line-height: 21px
+			cursor: pointer
+			margin-top: 10px
+			display: inline-block
+			color: #000
+	.icons
+		text-align: center
+		margin-top: 30px
+		.icon
+			text-align: center
+			width: 97px
+			height: 97px
+			line-height: 97px
+			color: #fff
+			font-size: 46px
+			background-color: $r_c
+			border-radius: 100px
+			display: block
+			margin: 0 auto
+			i
+				line-height: 97px
+		.text
+			text-align: center
+			font-size: 22px
+			line-height: 22px
+			margin-top: 15px
+			margin-bottom: 40px
+		.head
+			color: $r_c
+			text-transform: uppercase
+			font-size: 35px
+			line-height: 22px
+			margin-top: 22px
+	.info
+		margin-top: 30px
+		.wrapper_left
+			text-align: right
+			padding-right: 10px
+		.wrapper_right
+			text-align: left
+			padding-left: 10px
+		.one
+			font-size: 26px
+			text-transform: uppercase
+			line-height: 28px
+			margin-bottom: 8px
+			&.addr
+				margin-top: 10px
+	.my_form.my_mnu
+		button, button:active, button:focus, button:visited
+			background-color: #000
+			color: #fff
+			padding: 5px 8px
+			text-transform: uppercase
+			text-decoration: none
+			margin: 0 5px
+			transition: all .3s ease
+			display: inline-block
+			margin-bottom: 4px
+			line-height: 17px
+			&:hover
+				background-color: $r_c
+				transition: all .3s ease
+	table.table
+		a
+			color: $r_c
+			text-transform: uppercase
+	.pagination > .active > a
+		background-color: $r_c
+		border: 1px $r_c solid
+	.pagination > li
+		display: inline-block
+	.pagination
+		text-align: center
+		display: block
+		margin-top: 50px
+
+section.page.cart
+	table
+		margin-top: 10px
+		width: 100%
+		tr:nth-child(1)
+			color: $r_c
+			font-family: "RobotoCondensedBold"
+			background-color: #eee
+			height: 40px
+			td
+				font-family: "RobotoCondensedBold"
+		td
+			border: 1px #DDD solid
+			padding: 5px 7px
+			text-align: center
+			font-size: 14px
+			font-family: "RobotoCondensedRegular"
+		input
+			margin-right: 4px
+		i
+			background-color: $r_c
+			padding: 6px 7px
+			color: #fff
+			cursor: pointer
+			margin-right: 4px
+	.info
+		text-align: right
+		font-size: 26px
+		float: right
+		margin-top: 10px
+	.cart_erase, .cart_import
+		font-size: 18px
+		padding: 7px 12px
+		cursor: pointer
+		transition: all .4s ease
+		display: inline-block
+	.cart_erase
+		margin-top: 10px
+		background-color: #000
+		color: #fff
+		border: 1px #000 solid
+		&:hover
+			background-color: #fff
+			color: #000
+			transition: all .4s ease
+	.cart_import
+		margin-top: 10px
+		border: 1px #000 solid
+		&:hover
+			background-color: #000
+			color: #fff
+			transition: all .4s ease
+	.but.emp .cart_import
+		font-size: 18px
+		padding: 7px 12px
+		cursor: pointer
+		transition: all .4s ease
+		display: inline-block
+		border: 1px #000 solid
+		background-color: #000
+		color: #fff
+		&:hover
+			background-color: #fff
+			color: #000
+			transition: all .4s ease
+	.btn_order
+		text-align: center
+		margin-top: 25px
+		a
+			background-color: $r_c
+			color: #fff
+			border: 1px $r_c solid
+			text-decoration: none
+			font-size: 20px
+			padding: 7px 13px
+			transition: all .4s ease
+			&:hover
+				background-color: #fff
+				color: $r_c
+				transition: all .4s ease
+	.act_text
+		padding: 0
+		margin: 0
+		text-align: center
+		font-size: 20px
+.mes
+	color: #fff
+	text-align: center
+	padding: 8px 12px
+	font-size: 16px
+	margin: 20px 0px
+	display: none
+	a
+		color: #fff
+		text-decoration: underline
+	.cls
+		border-bottom: 1px #fff dashed
+		display: inline-block
+		margin-top: 6px
+		font-size: 14px
+		line-height: 14px
+		cursor: pointer
+		margin-bottom: 1px
+	&.green
+		background-color: #007419
+	&.red
+		background-color: $r_c
+
+.prod_none
+	form
+		margin-bottom: 0
+		margin: 10px 0
+		p
+			font-family: "RobotoCondensedBold"
+			button
+				border: none
+				background: none
+				color: $r_c
+				padding: 0
+				&:hover
+					text-decoration: underline
+.cart_empty
+	text-align: center
+	font-size: 26px
+	margin: 70px 0
+	display: none
+.page.ord
+	.ord_to
+		text-align: center
+		font-size: 28px
+		line-height: 30px
+		margin-bottom: 23px
+	.how_ord
+		font-size: 24px
+		margin-top: 20px
+		text-align: center
+		line-height: 26px
+	.ord_choice, .myform
+		margin-top: 20px
+		button
+			margin: 0 auto
+			margin-top: 15px
+			transition: all .4s ease
+			&:hover
+				background-color: #000
+				transition: all .4s ease
+		.one
+			margin-bottom: 15px
+			.head
+				text-align: center
+				border: 1px $r_c solid
+				color: #000
+				padding: 8px
+				cursor: pointer
+				font-size: 26px
+				transition: all .4s ease
+				display: block
+				a
+					text-decoration: none
+					color: #000
+					transition: all .4s ease
+				&:hover
+					background-color: $r_c
+					color: #fff
+					transition: all .4s ease
+					text-decoration: none
+				&:hover a
+					color: #fff
+					transition: all .4s ease
+				&.active
+					background-color: $r_c
+					color: #fff
+					transition: all .4s ease
+			.content
+				display: none
+				border: 1px $r_c solid
+				padding: 15px
+section.page.orders, section.page.archive
+	.content_page
+		margin-top: 40px
+		.block
+			border: 1px #000 solid
+			margin-bottom: 20px
+			.head
+				background-color: #000
+				color: #fff
+				padding: 10px 15px
+				cursor: pointer
+				transition: all .4s ease
+				&.active
+					background-color: $r_c
+					transition: all .4s ease
+				.h
+					font-size: 31px
+					line-height: 31px
+					margin-bottom: 7px
+				.text
+					font-size: 18.5px
+					line-height: 23px
+					text-transform: uppercase
+				.more
+					border-bottom: 1px #fff dashed
+					cursor: pointer
+					display: inline-block
+					font-size: 18.5px
+					line-height: 21px
+					margin-top: 7px
+					margin-bottom: 6px
+					&:hover
+						border-bottom: 1px #fff solid
+			.body
+				padding: 15px
+				display: none
+				.str
+					font-size: 18.5px
+				.link
+					font-size: 18.5px
+					line-height: 19px
+					margin-bottom: 15px
+					&.archive
+						margin-top: 15px
+					span
+						border-bottom: 1px $r_c dashed
+						cursor: pointer
+						&:hover
+							border-bottom: 1px $r_c solid
+					.del_confirm, .archive_confirm
+						display: none
+						cursor: pointer
+						margin-left: 13px
+				table
+					margin-top: 30px
+					width: 100%
+					tr:nth-child(1)
+						color: $r_c
+						font-family: "RobotoCondensedBold"
+						background-color: #eee
+						height: 40px
+						td
+							font-family: "RobotoCondensedBold"
+					td
+						border: 1px #DDD solid
+						padding: 5px 7px
+						text-align: center
+						font-size: 14px
+						font-family: "RobotoCondensedRegular"
+						&.form
+							button
+								color: $r_c
+								border: none
+								background-color: none
+								background: none
+								margin: 0
+								padding: 0
+								&:hover
+									text-decoration: underline
+							form
+								margin-bottom: 0
+					input
+						margin-right: 4px
+					i
+						background-color: $r_c
+						padding: 6px 7px
+						color: #fff
+						cursor: pointer
+						margin-right: 4px
+					tr.empty
+						height: 15px
+					tr.dost td
+						font-family: "RobotoCondensedBold"
+	.all_btns
+		margin-top: 25px
+		margin-bottom: 15px
+		text-align: center
+		span
+			font-size: 18px
+			background-color: $r_c
+			color: #fff
+			padding: 7px 12px
+			margin: 0 5px
+			cursor: pointer
+			border: 1px $r_c solid
+			transition: all .4s ease
+			display: inline-block
+			margin-bottom: 10px
+			&:hover
+				background-color: #fff
+				color: $r_c
+				transition: all .4s ease
+section.page.archive
+	.link.del
+		margin-top: 15px
+section.page.transaction
+	.content
+		margin-top: 30px
+		.one
+			margin: 30px 0
+			.head
+				font-size: 28px
+				line-height: 21px
+				color: $r_c
+				margin-left: 15px
+			.text
+				padding: 15px
+				background-color: #000
+				color: #fff
+				font-size: 16px
+				line-height: 18px
+				p
+					margin: 4px 0
+section.page.wishlist
+	table
+		margin-top: 30px
+		width: 100%
+		tr:nth-child(1)
+			color: $r_c
+			font-family: "RobotoCondensedBold"
+			background-color: #eee
+			height: 40px
+			td
+				font-family: "RobotoCondensedBold"
+		td
+			border: 1px #DDD solid
+			padding: 5px 7px
+			text-align: center
+			font-size: 14px
+			font-family: "RobotoCondensedRegular"
+			&.form
+				button
+					color: $r_c
+					border: none
+					background-color: none
+					background: none
+					margin: 0
+					padding: 0
+					&:hover
+						text-decoration: underline
+				form
+					margin-bottom: 0
+		input
+			margin-right: 4px
+		i
+			background-color: $r_c
+			padding: 6px 7px
+			color: #fff
+			cursor: pointer
+			margin-right: 4px
+section.page.messages
+	.content
+		margin-top: 30px
+		.one
+			margin: 30px 0
+			.head
+				font-size: 28px
+				line-height: 21px
+				color: $r_c
+				margin-left: 15px
+			.text
+				padding: 15px
+				background-color: #000
+				color: #fff
+				font-size: 16px
+				line-height: 18px
+				p
+					margin: 6px 0
+				p.last
+					margin-bottom: 10px
+				span:hover
+					border-bottom: 1px $r_c solid
+			p.readed, p.del
+				font-size: 14px
+				span
+					border-bottom: 1px $r_c dashed
+					cursor: pointer
+
+			p.del
+				span.del_confirm
+					margin-left: 8px
+					display: none
+section.contacts
+	min-height: 100px
+	padding-bottom: 30px
+	#map_contacts
+		width: 100%
+		height: 300px
+	.contacts_block
+		text-align: center
+		color: #000
+		font-family: "RobotoCondensedRegular"
+		p
+			font-size: 19px
+			margin-bottom: 9px
+			i
+				color: $r_c
+				margin-right: 12px
+				font-size: 25px
+				vertical-align: bottom
+	form
+		button
+			margin: 0 auto
+			margin-top: 30px
+			margin-bottom: 60px
+			transition: all .4s ease
+			&:hover
+				background-color: #000
+				transition: all .4s ease
+form#form-signup.myform
+	.field-signupform-phone
+		margin-bottom: 50px
+
+.cont
+	font-size: 18px
+
+.news
+	.nws
+		margin: 15px 0
+		.content
+			font-family: "RobotoCondensedBold"
+			margin-top: 4px
+		.header
+			color: $r_c
+			text-transform: uppercase
+			font-size: 20px
+			line-height: 22px
+		.date
+			margin-top: 2px
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog
+	opacity: 0
+
+	-webkit-transition: all 0.2s ease-in-out
+	-moz-transition: all 0.2s ease-in-out
+	-o-transition: all 0.2s ease-in-out
+	transition: all 0.2s ease-in-out
+
+	-webkit-transform: scale(0.8)
+	-moz-transform: scale(0.8)
+	-ms-transform: scale(0.8)
+	-o-transform: scale(0.8)
+	transform: scale(0.8)
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+	opacity: 1
+
+	-webkit-transform: scale(1)
+	-moz-transform: scale(1)
+	-ms-transform: scale(1)
+	-o-transform: scale(1)
+	transform: scale(1)
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+	-webkit-transform: scale(0.8)
+	-moz-transform: scale(0.8)
+	-ms-transform: scale(0.8)
+	-o-transform: scale(0.8)
+	transform: scale(0.8)
+
+	opacity: 0
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg
+	opacity: 0
+	-webkit-transition: opacity 0.3s ease-out
+	-moz-transition: opacity 0.3s ease-out
+	-o-transition: opacity 0.3s ease-out
+	transition: opacity 0.3s ease-out
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+	opacity: 0.8
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+	opacity: 0
